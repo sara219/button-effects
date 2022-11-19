@@ -38,7 +38,7 @@ a {
   color: #fff;
   padding: 0.9rem 2.20rem;
   border-radius: 3rem;
-  transition: 0.4s;
+  /* transition: 0.4s; */
 }
 
 .button::after {
@@ -74,10 +74,31 @@ a {
   margin: auto;
   pointer-events: 0.6s;
   transition: 0.6s;
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 /* Move 3D geometric elements */
+.btn-cone{
+  width: 18px;
+  transform: translate(-25px, -6px) rotate(55deg);
+  filter: blur(0.5px);
+}
+
+.btn-torus{
+  width: 38px;
+  transform: translate(7px, -14px) rotate(80deg);
+}
+
+.btn-icosahedron{
+  width: 36px;
+  transform: translate(34px, -4px) rotate(-45deg);
+  filter: blur(0.9px);
+}
+
+.btn-sphere{
+  width: 30px;
+  transform: translate(-5px, 15px) rotate(40deg);
+}
 
 /* View shadow gradient */
 
