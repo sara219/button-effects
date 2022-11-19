@@ -105,7 +105,9 @@ a {
   opacity: 1;
 }
 
-
 /* Button scale */
+.button:hover{
+  transform: scale(1.3);
+}
 
 /* View 3D geometric elements */
