@@ -36,9 +36,9 @@ a {
   position: relative;
   background-color: var(--first-color);
   color: #fff;
-  padding: 0.9rem 2.20rem;
+  padding: 0.9rem 2.2rem;
   border-radius: 3rem;
-  /* transition: 0.4s; */
+  transition: 0.4s;
 }
 
 .button::after {
@@ -62,13 +62,12 @@ a {
   transition: opacity 0.4s;
 }
 
-
 .btn-text {
   position: relative;
   z-index: 10;
 }
 
-.button img{
+.button img {
   position: absolute;
   inset: 0;
   margin: auto;
@@ -78,24 +77,24 @@ a {
 }
 
 /* Move 3D geometric elements */
-.btn-cone{
+.btn-cone {
   width: 18px;
   transform: translate(-25px, -6px) rotate(55deg);
   filter: blur(0.5px);
 }
 
-.btn-torus{
+.btn-torus {
   width: 38px;
   transform: translate(7px, -14px) rotate(80deg);
 }
 
-.btn-icosahedron{
+.btn-icosahedron {
   width: 36px;
   transform: translate(34px, -4px) rotate(-45deg);
   filter: blur(0.9px);
 }
 
-.btn-sphere{
+.btn-sphere {
   width: 30px;
   transform: translate(-5px, 15px) rotate(40deg);
 }
@@ -106,8 +105,27 @@ a {
 }
 
 /* Button scale */
-.button:hover{
+.button:hover {
   transform: scale(1.3);
 }
 
 /* View 3D geometric elements */
+.button:hover img {
+  opacity: 1;
+}
+
+.button:hover .btn-cone {
+  transform: translate(-38px, -10px) scale(1.2);
+}
+
+.button:hover .btn-torus {
+  transform: translate(7px, -32px) scale(1.1);
+}
+
+.button:hover .btn-icosahedron {
+  transform: translate(50px, -20px) scale(1.2);
+}
+
+.button:hover .btn-sphere {
+  transform: translate(-14px, 20px) scale(1.2);
+}
