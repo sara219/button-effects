@@ -101,6 +101,10 @@ a {
 }
 
 /* View shadow gradient */
+.button:hover::after {
+  opacity: 1;
+}
+
 
 /* Button scale */
 
